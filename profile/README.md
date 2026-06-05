@@ -9,9 +9,9 @@
 <h3 align="center">Agents as first-class primitives — declared, deployed, and run.</h3>
 
 <p align="center">
-  <a href="https://docs.phrony.com">Documentation</a>
+  <a href="https://phrony.com/docs">Documentation</a>
   ·
-  <a href="https://docs.phrony.com/agent-spec">Agent spec</a>
+  <a href="https://phrony.com/docs/agent-spec">Agent spec</a>
   ·
   <a href="https://phrony.com">phrony.com</a>
 </p>
@@ -37,9 +37,9 @@ run      →  phrony session …  ·  SDK  ·  gRPC RunSession
 
 ## Learn more
 
-- **[Paradigm](https://docs.phrony.com/paradigm)** — why agents need their own primitive
-- **[Agent spec](https://docs.phrony.com/agent-spec)** — manifest format (`phrony.com/v1`)
-- **[Runtime](https://docs.phrony.com/runtime)** — install, CLI, tool dispatch, MCP tools, durability, HITL
+- **[Paradigm](https://phrony.com/docs/paradigm)** — why agents need their own primitive
+- **[Agent spec](https://phrony.com/docs/agent-spec)** — manifest format (`phrony.com/v1`)
+- **[Runtime](https://phrony.com/docs/runtime)** — install, CLI, tool dispatch, MCP tools, durability, HITL
 
 ## Contributing
 
