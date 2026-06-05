@@ -35,43 +35,6 @@ run      →  phrony session …  ·  SDK  ·  gRPC RunSession
 | [runtime](https://github.com/phrony-platform/runtime) | Official open-source **Phrony Agent Spec** runtime (`phrony-runtime` daemon, `phrony` operator CLI, gRPC API) |
 | [typescript-sdk](https://github.com/phrony-platform/typescript-sdk) | **`@phrony/sdk`** — TypeScript client for agents, interactive sessions, and tool workers |
 
-## Get started in five minutes
-
-1. Clone and start the runtime (Postgres + gRPC on `127.0.0.1:7777`):
-
-   ```bash
-   git clone https://github.com/phrony-platform/runtime.git
-   cd runtime && make dev-up
-   ```
-
-2. Install the operator CLI and check the daemon:
-
-   ```bash
-   make install-cli
-   phrony status
-   ```
-
-3. See the [runtime docs](https://docs.phrony.com/runtime) to validate manifests, deploy agents, and run sessions.
-
-For TypeScript applications talking to a local runtime:
-
-```bash
-pnpm add @phrony/sdk
-```
-
-```typescript
-import { Phrony } from "@phrony/sdk";
-
-const phrony = await Phrony.connect();
-const result = await phrony.agent("default/my-agent").run({
-  input: { question: "hello" },
-});
-console.log(result.output);
-phrony.close();
-```
-
-See the [typescript-sdk](https://github.com/phrony-platform/typescript-sdk) README for workers, streaming sessions, and integration tests.
-
 ## Learn more
 
 - **[Paradigm](https://docs.phrony.com/paradigm)** — why agents need their own primitive
