@@ -1,6 +1,6 @@
 <p align="center">
   <img
-    src="https://raw.githubusercontent.com/phrony-platform/runtime/main/assets/phrony-runtime-logo.png"
+    src="./phrony-logo.png"
     alt="Phrony"
     width="480"
   />
