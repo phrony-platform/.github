@@ -11,8 +11,6 @@
 <p align="center">
   <a href="https://docs.phrony.com">Documentation</a>
   ·
-  <a href="https://docs.phrony.com/quick-start">Quick start</a>
-  ·
   <a href="https://docs.phrony.com/agent-spec">Agent spec</a>
   ·
   <a href="https://phrony.com">phrony.com</a>
@@ -20,7 +18,7 @@
 
 ---
 
-**Phrony** is an open stack for production agents: a declarative **Agent Spec**, a reference **runtime** that executes manifests, and SDKs and examples for applications and tool workers.
+**Phrony** is an open stack for production agents: a declarative **Agent Spec**, a reference **runtime** that executes manifests, and an SDK for applications and tool workers.
 
 Instead of embedding an agent loop in application code, you **declare** the agent in versioned YAML, **deploy** a named version to the runtime, and **run** it through `phrony` or gRPC — the runtime owns the model loop, tools, policies, limits, human-in-the-loop, and traces.
 
@@ -36,7 +34,6 @@ run      →  phrony session …  ·  SDK  ·  gRPC RunSession
 | --- | --- |
 | [runtime](https://github.com/phrony-platform/runtime) | Official open-source **Phrony Agent Spec** runtime (`phrony-runtime` daemon, `phrony` operator CLI, gRPC API) |
 | [typescript-sdk](https://github.com/phrony-platform/typescript-sdk) | **`@phrony/sdk`** — TypeScript client for agents, interactive sessions, and tool workers |
-| [tool-worker-playground](https://github.com/phrony-platform/tool-worker-playground) | Minimal Go **tool worker** example (Work stream, dispatch, HITL) |
 
 ## Get started in five minutes
 
@@ -54,7 +51,7 @@ run      →  phrony session …  ·  SDK  ·  gRPC RunSession
    phrony status
    ```
 
-3. Follow the [quick start](https://docs.phrony.com/quick-start): write a manifest, validate, deploy, and run a session.
+3. See the [runtime docs](https://docs.phrony.com/runtime) to validate manifests, deploy agents, and run sessions.
 
 For TypeScript applications talking to a local runtime:
 
