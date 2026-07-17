@@ -18,7 +18,7 @@
 
 ---
 
-**Phrony** is an open stack for production agents: a declarative **Agent Spec**, a reference **runtime** that executes manifests, and an SDK for applications and tool workers.
+**Phrony** is an open stack for production agents: a declarative **Agent Spec**, a reference **runtime** that executes manifests, and SDKs for applications and tool workers.
 
 Instead of embedding an agent loop in application code, you **declare** the agent in versioned YAML, **deploy** a named version to the runtime, and **run** it through `phrony` or gRPC — the runtime owns the model loop, tools, policies, limits, human-in-the-loop, and traces.
 
@@ -34,6 +34,7 @@ run      →  phrony session …  ·  SDK  ·  gRPC RunSession
 | --- | --- |
 | [runtime](https://github.com/phrony-platform/runtime) | Official open-source **Phrony Agent Spec** runtime (`phrony-runtime` daemon, `phrony` operator CLI, gRPC API) |
 | [typescript-sdk](https://github.com/phrony-platform/typescript-sdk) | **`@phrony/sdk`** — TypeScript client for agents, interactive sessions, and tool workers |
+| [python-sdk](https://github.com/phrony-platform/python-sdk) | **`phrony`** — Python client for agents, interactive sessions, and tool workers |
 
 ## Learn more
 
